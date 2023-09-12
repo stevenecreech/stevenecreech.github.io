@@ -31,7 +31,7 @@ We remark the subtle difference between $$\pi_k$$ and $$\pi_k^*$$ by observing t
 Now the goal will be to give a recursive formula for $$\pi_k(x)$$ and $$\pi_k^*(x)$$. We shall first state the formula for semiprimes as the following theorems. We note that the formula for $$\pi_2(x)$$ was given by R.G. Wilson in 2006 and E. Noel and G. Panos in 2005; however, neither result was published and was only given in a correspondence. Furthermore, I was unable to find a proof of the formula written down anywhere, so we will provide one here. 
 
 <h2>Theorem 1:</h2> 
-Let us denote $$p_k$$ to be the $$k$$-th prime number, then we have the following formula for the number of semiprimes and square-free semiprimes less than a given value $$x$$:
+$$\textbf{Theorem 1:}$$Let us denote $$p_k$$ to be the $$k$$-th prime number, then we have the following formula for the number of semiprimes and square-free semiprimes less than a given value $$x$$:
 
 $$
 \pi_2(x)=\sum_{k=1}^{\pi(\sqrt{x})}\left(\pi\left(\frac{x}{p_k}\right)-k+1\right)
