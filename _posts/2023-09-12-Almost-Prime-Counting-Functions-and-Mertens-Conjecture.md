@@ -26,7 +26,27 @@ $$
 \pi_k^*(x)=\#\{n\leq x:\Omega(n)=k, n\text{ is square-free}\}.
 $$
 
-We remark the subtle difference between $$\pi_k$$ and $$\pi_k^*$$ by observing that $$\pi_2(6)=2$$ while $$\pi_2^*(6)1$$. Since we have that $$4,6$$ are the two semiprimes less than or equal to $$6$$, but $$6$$ is the only square-free semiprime less than $$6$$ as we don't count $$4$$. 
+We remark the subtle difference between $$\pi_k$$ and $$\pi_k^*$$ by observing that $$\pi_2(6)=2$$ while $$\pi_2^*(6)=1$$. Since we have that $$4,6$$ are the two semiprimes less than or equal to $$6$$, but $$6$$ is the only square-free semiprime less than $$6$$ as we don't count $$4$$. Thus, another way of viewing $$\pi_k^*(x)$$ is to count the number of positive integers $$n$$ less than $$x$$ with prime factorization $$n=\prod_{i=1}^kp_i$$ where $$p_i\neq p_j$$ for $$i\neq j$$. 
+
+Now the goal will be to give a recursive formula for $$\pi_k(x)$$ and $$\pi_k^*(x)$$. We shall first state the formula for semiprimes as the following theorems. We note that the formula for $$\pi_2(x)$$ was given by R.G. Wilson in 2006 and E. Noel and G. Panos in 2005; however, neither result was published and was only given in a correspondence. Furthermore, I was unable to find a proof of the formula written down anywhere, so we will provide one here. 
+
+<h2>Theorem 1:</h2> 
+Let us denote $$p_k$$ to be the $$k$$-th prime number, then we have the following formula for the number of semiprimes and square-free semiprimes less than a given value $$x$$:
+
+$$
+\pi_2(x)=\sum_{k=1}^{\pi(\sqrt{x})}\left(\pi\left(\frac{x}{p_k}\right)-k+1\right)
+$$
+
+$$
+\pi_2^*(x)=\sum_{k=1}^{\pi(\sqrt{x})}\left(\pi\left(\frac{x}{p_k}\right)-k\right)
+$$
+
+We shall then prove the more 
+
+<h1>The Semiprime Case</h1>
 
 
+<h1>The General $$k$$-almost Prime Case</h1>
 
+
+<h1>Connection to Merten's Conjecture and Riemann Hypothesis</h1>
