@@ -5,4 +5,4 @@ date: 2023-09-12
 ---
 
 
-Try to do the $\frac{a}{b}$
+Try to do the $$\frac{a}{b}$$
