@@ -46,7 +46,7 @@ We shall then prove the more
 <h1>The Semiprime Case</h1>
 
 
-<h1>The General $$k$$-almost Prime Case</h1>
+<h1>The General $k$-almost Prime Case</h1>
 
 
 <h1>Connection to Merten's Conjecture and Riemann Hypothesis</h1>
