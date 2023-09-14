@@ -40,7 +40,7 @@ $$
 \pi_2^*(x)=\sum_{k=1}^{\pi(\sqrt{x})}\left(\pi\left(\frac{x}{p_k}\right)-k\right)
 $$
 
-We shall then prove the more general formula f
+We shall then prove the more general form of these statements for $$k$$-almost primes
 
 $$\textbf{Theorem 2:}$$ With the same notation as above, we have the following formulas for the $$k$$-almost primes and square-free $$k$$-almost primes less than a given value $$x$$:
 
@@ -54,12 +54,16 @@ $$
 \pi_k^*(x)
 $$
 
+After proving these formulas, we shall relate
+
 <h1>The Semiprime Case</h1>
 
 Now we shall give a proof of $$\textbf{Theorem 1}$$ for the formula for semiprimes primarily because it will highlight the general approach to the $$k$$-almost prime case. In addition, 
 
 
-<h1>The General $k$-almost Prime Case</h1>
+<h1>$$\text{The General $k$-almost Prime Case}$$</h1>
 
 
 <h1>Connection to Merten's Conjecture and Riemann Hypothesis</h1>
+
+
