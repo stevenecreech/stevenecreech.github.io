@@ -61,7 +61,7 @@ After proving these formulas, we shall relate
 Now we shall give a proof of $$\textbf{Theorem 1}$$ for the formula for semiprimes primarily because it will highlight the general approach to the $$k$$-almost prime case. In addition, 
 
 
-<h1>$$\text{The General $k$-almost Prime Case}$$</h1>
+<h1>The General k-almost Prime Case</h1>
 
 
 <h1>Connection to Merten's Conjecture and Riemann Hypothesis</h1>
