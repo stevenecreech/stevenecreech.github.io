@@ -28,9 +28,8 @@ $$
 
 We remark the subtle difference between $$\pi_k$$ and $$\pi_k^*$$ by observing that $$\pi_2(6)=2$$ while $$\pi_2^*(6)=1$$. Since we have that $$4,6$$ are the two semiprimes less than or equal to $$6$$, but $$6$$ is the only square-free semiprime less than $$6$$ as we don't count $$4$$. Thus, another way of viewing $$\pi_k^*(x)$$ is to count the number of positive integers $$n$$ less than $$x$$ with prime factorization $$n=\prod_{i=1}^kp_i$$ where $$p_i\neq p_j$$ for $$i\neq j$$. 
 
-Now the goal will be to give a recursive formula for $$\pi_k(x)$$ and $$\pi_k^*(x)$$. We shall first state the formula for semiprimes as the following theorems. We note that the formula for $$\pi_2(x)$$ was given by R.G. Wilson in 2006 and E. Noel and G. Panos in 2005; however, neither result was published and was only given in a correspondence. Furthermore, I was unable to find a proof of the formula written down anywhere, so we will provide one here. 
+Now the goal will be to give a recursive formula for $$\pi_k(x)$$ and $$\pi_k^*(x)$$. We shall first state the formula for semiprimes as the following theorems. We note that the formula for $$\pi_2(x)$$ was given by R.G. Wilson in 2006 and E. Noel and G. Panos in 2005 <a href = "https://mathworld.wolfram.com/Semiprime.html">(see this note)</a>; however, neither result was published and was only given in a correspondence. Furthermore, I was unable to find a proof of the formula written down anywhere, so we will provide one here. 
 
-<h2>Theorem 1:</h2> 
 $$\textbf{Theorem 1:}$$Let us denote $$p_k$$ to be the $$k$$-th prime number, then we have the following formula for the number of semiprimes and square-free semiprimes less than a given value $$x$$:
 
 $$
@@ -41,9 +40,23 @@ $$
 \pi_2^*(x)=\sum_{k=1}^{\pi(\sqrt{x})}\left(\pi\left(\frac{x}{p_k}\right)-k\right)
 $$
 
-We shall then prove the more 
+We shall then prove the more general formula f
+
+$$\textbf{Theorem 2:}$$ With the same notation as above, we have the following formulas for the $$k$$-almost primes and square-free $$k$$-almost primes less than a given value $$x$$:
+
+$$
+\begin{equation}
+\pi_k(x)=
+\end{equation}
+$$
+
+$$
+\pi_k^*(x)
+$$
 
 <h1>The Semiprime Case</h1>
+
+Now we shall give a proof of $$\textbf{Theorem 1}$$ for the formula for semiprimes primarily because it will highlight the general approach to the $$k$$-almost prime case. In addition, 
 
 
 <h1>The General $k$-almost Prime Case</h1>
