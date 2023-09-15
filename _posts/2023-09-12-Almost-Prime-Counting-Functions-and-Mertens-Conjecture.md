@@ -81,10 +81,19 @@ Then we have that Merten's function, $$M(x)$$, is the running sum over the Möbi
 $$
 M(x)=\sum_{n\leq x}\mu(n)
 $$
-Merten originally conjectured that $$\vert M(x)\vert\leq \sqrt{x}$$. However, it was disproven by Odlyzko and Riele <a href="https://www-users.cse.umn.edu/~odlyzko/doc/arch/mertens.disproof.pdf">(see this paper)</a>. Although, the weaker statement of $$M(x)=O(x^{\frac{1}{2}+\epsilon})$$ for any $$\epsilon>0$$ is still an open problem (which is equivalent to the Riemann hypothesis). Now we have the following relationship between Merten's conjecture and the square-free $$k$$-almost prime counting functions we state it as the following theorem. 
+Merten originally conjectured that $$\vert M(x)\vert\leq \sqrt{x}$$. However, it was disproven by Odlyzko and Riele in 1984 <a href="https://www-users.cse.umn.edu/~odlyzko/doc/arch/mertens.disproof.pdf">(see this paper)</a>. Although, the weaker statement of $$M(x)=O(x^{\frac{1}{2}+\epsilon})$$ for any $$\epsilon>0$$ is still an open problem (which is equivalent to the Riemann hypothesis). Now we have the following relationship between Merten's conjecture and the square-free $$k$$-almost prime counting functions we state it as the following theorem. 
 
 $$\textbf{Theorem 3:}$$ We let $$\delta_{x\geq 1}$$ to be the function that is $$1$$ if the input is greater than or equal to $$1$$ and $$0$$ otherwise, then we have the following 
 
 $$
 M(x)=\delta_{x\geq 1}(x)+\sum_{k=1}^\infty(-1)^{k+1}\pi_k^*(x)
 $$
+Furthermore, we remark that the sum is actually a finite sum since we will have that $$\pi_k^*(x)=0$$ for all $$k\geq \log_2(x)$$ since the first $$k$$-almost prime is $$2^k$$. We note that as we are counting square-free $$k$$-almost primes there is a better bound for the upper index of the sum; however, such a bound is a bit harder to describe in concise mathematical notation. In particular, the sum can end at the number $$\ell$$ which is the smallest integer such that $$p_1\cdot...\cdot p_{\ell}>x$$, we shall denote this number by $$\nu(x):=\ell$$, so we have the finite sum version of this sum is given by:
+
+$$
+M(x)=\delta_{x\geq 1}(x)+\sum_{k=1}^{\nu(x)}(-1)^{k+1}\pi_k^*(x)
+$$
+
+Now to prove this theorem, we remark that
+
+
