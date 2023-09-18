@@ -54,7 +54,7 @@ $$
 \pi_k^*(x)
 $$
 
-After proving these formulas, we shall relate
+After proving these formulas, we shall relate these ideas to Merten's conjecture by giving a formula for Merten's function in terms of the square-free $$k$$-almost prime counting functions. 
 
 <h1>The Semiprime Case</h1>
 
@@ -94,6 +94,20 @@ $$
 M(x)=\delta_{x\geq 1}(x)+\sum_{k=1}^{\nu(x)}(-1)^{k+1}\pi_k^*(x)
 $$
 
-Now to prove this theorem, we remark that
+Now to prove this theorem, we remark that Merten's function will have that the $$\mu(1)$$ term is accounted for in the $$\delta_{x\geq 1}$$ term. Then we have that $$\mu(n)$$ will be $$-1$$ for all the primes less than $$x$$ which gives us the contribution of $$-\pi_1^*(x)$$, then continuing we will have that $$\mu(n)$$ will be $$1$$ for all the square-free semiprimes less than $$x$$ giving the contribution of $$\pi_2^*(x)$$, and continuing on with the square-free $$k$$-almost primes there will be $$\pi_k^*(x)$$ of them less than $$x$$ and for each of these the Möbius function will have the value of $$(-1)^{k+1}$$ which is how we deduce our formula for Merten's function. 
+
+Now I shall remark that I had hoped that such a formula for Merten's function in terms of the square-free $$k$$-almost prime counting functions could help in proving the pseudo-Riemann hypothesis which asserts that there is some $$\epsion>0$$ such that $$\zeta(s)$$ has no zeros for $$\text{Re}(s)>1-\epsilon$$. The equivalent formulation in terms of Merten's function will be that there is some $$\epsilon>0$$ such that $$M(x)=O(x^{1-\epsilon})$$. However, I am not clever enough to come up with such a proof (as one would expect it to be extremely difficult). However, I might note that we do have the following asymptotic expression for the $$k$$-almost primes (see chapter II.6 of Tenenbaum's book "Introduction to Analytic and Probabilistic Number Theory")
+
+$$\textbf{Theorem 4:}$$ We have the following estimate for the number of $$k$$-almost primes as $$x\rightarrow \infty$$
+
+$$
+\pi_k(x)\sim \frac{x}{\log x}\frac{(\log\log x)^{k-1}}{(k-1)!}
+$$
+
+We note that the book does not give a proof for the square-free case, but one should expect that such an asymptotic to still hold in that case. This seems like a good place to finish off as it isn't entirely clear how to proceed, but I shall finish off by stating several questions that I don't know whether or not they are easy to prove or not but might be interesting food for thought for the engaged reader.
+
+$$\textbf{Question 1:}$$ It is known that Merten's function changes signs infinitely often is it possible to give a proof of this fact by combining Theorems 3 and 4?
+
+$$\textbf{Question 2:}$$ The asymptotic in Theorem 4 suggests that for $$x$$ large enough one might expect there to be more $$k$$-almost primes than $$\ell$$-almost primes for $$k>\ell$$, is it possible to prove this by combining Theorem 3 with the fact that Merten's function changes signs infinitely often?
 
 
