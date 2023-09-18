@@ -65,6 +65,7 @@ We shall do this by simply counting the number of semiprimes less than $$x$$. To
 
 <h1>The General k-almost Prime Case</h1>
 
+We shall now give a proof of the general $$k$$-almost prime case. 
 
 <h1>Connection to Merten's Conjecture and Riemann Hypothesis</h1>
 
@@ -96,7 +97,7 @@ $$
 
 Now to prove this theorem, we remark that Merten's function will have that the $$\mu(1)$$ term is accounted for in the $$\delta_{x\geq 1}$$ term. Then we have that $$\mu(n)$$ will be $$-1$$ for all the primes less than $$x$$ which gives us the contribution of $$-\pi_1^*(x)$$, then continuing we will have that $$\mu(n)$$ will be $$1$$ for all the square-free semiprimes less than $$x$$ giving the contribution of $$\pi_2^*(x)$$, and continuing on with the square-free $$k$$-almost primes there will be $$\pi_k^*(x)$$ of them less than $$x$$ and for each of these the Möbius function will have the value of $$(-1)^{k+1}$$ which is how we deduce our formula for Merten's function. 
 
-Now I shall remark that I had hoped that such a formula for Merten's function in terms of the square-free $$k$$-almost prime counting functions could help in proving the pseudo-Riemann hypothesis which asserts that there is some $$\epsion>0$$ such that $$\zeta(s)$$ has no zeros for $$\text{Re}(s)>1-\epsilon$$. The equivalent formulation in terms of Merten's function will be that there is some $$\epsilon>0$$ such that $$M(x)=O(x^{1-\epsilon})$$. However, I am not clever enough to come up with such a proof (as one would expect it to be extremely difficult). However, I might note that we do have the following asymptotic expression for the $$k$$-almost primes (see chapter II.6 of Tenenbaum's book "Introduction to Analytic and Probabilistic Number Theory")
+Now I shall remark that I had hoped that such a formula for Merten's function in terms of the square-free $$k$$-almost prime counting functions could help in proving the pseudo-Riemann hypothesis which asserts that there is some $$\epsilon>0$$ such that $$\zeta(s)$$ has no zeros for $$\text{Re}(s)>1-\epsilon$$. The equivalent formulation in terms of Merten's function will be that there is some $$\epsilon>0$$ such that $$M(x)=O(x^{1-\epsilon})$$. However, I am not clever enough to come up with such a proof (as one would expect it to be extremely difficult). However, I might note that we do have the following asymptotic expression for the $$k$$-almost primes (see chapter II.6 of Tenenbaum's book "Introduction to Analytic and Probabilistic Number Theory")
 
 $$\textbf{Theorem 4:}$$ We have the following estimate for the number of $$k$$-almost primes as $$x\rightarrow \infty$$
 
