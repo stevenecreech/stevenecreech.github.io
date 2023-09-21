@@ -30,7 +30,19 @@ We remark the subtle difference between $$\pi_k$$ and $$\pi_k^*$$ by observing t
 
 Now the goal will be to give a recursive formula for $$\pi_k(x)$$ and $$\pi_k^*(x)$$. We shall first state the formula for semiprimes as the following theorems. We note that the formula for $$\pi_2(x)$$ was given by R.G. Wilson in 2006 and E. Noel and G. Panos in 2005 <a href = "https://mathworld.wolfram.com/Semiprime.html">(see this note)</a>; however, neither result was published and was only given in a correspondence. Furthermore, I was unable to find a proof of the formula written down anywhere, so we will provide one here. 
 
-$$\textbf{Theorem 1:}$$Let us denote $$p_k$$ to be the $$k$$-th prime number, then we have the following formula for the number of semiprimes and square-free semiprimes less than a given value $$x$$:
+$$\textbf{Theorem 1:}$$Let us denote $$p_k$$ to be the $$k$$-th prime number, then the number of semiprimes less than a given value $$x$$ whose smallest prime factor is $$p_j$$ is given by the formula:
+
+$$
+\sum_{k=i}^{\pi(\sqrt{x})}\left(\pi\left(\frac{x}{p_k}\right)-k+1\right)
+$$
+
+Similarly, the number of square-free semiprimes less than a given value $$x$$ whose smallest possible prime factor is $$p_j$$ is given by the formula:
+
+$$
+\sum_{k=j}^{\pi(\sqrt{x})}\left(\pi\left(\frac{x}{p_k}\right)-k\right)
+$$
+
+In particular, setting $$j=1$$, we get the following formulas for the number of semiprimes and square-free semiprimes less than a given value $$x$$:
 
 $$
 \pi_2(x)=\sum_{k=1}^{\pi(\sqrt{x})}\left(\pi\left(\frac{x}{p_k}\right)-k+1\right)
@@ -40,19 +52,35 @@ $$
 \pi_2^*(x)=\sum_{k=1}^{\pi(\sqrt{x})}\left(\pi\left(\frac{x}{p_k}\right)-k\right)
 $$
 
-We shall then prove the more general form of these statements for $$k$$-almost primes
+We shall then prove the more general form of these statements for $$k$$-almost primes. I will note that the statement for the $$3$$-almost prime case I found a solution in the following <a href = "https://math.stackexchange.com/questions/1129118/counting-squarefree-3-almost-primes-solved">StackExchange post</a>, and one should remark that square-free $$3$$-almost primes are known as sphenic numbers, and the StackExchange post gives a formula to count them. The hard part in this tends to be the jump from $$2$$ to $$3$$, so our below theorem just continues the ideas encapsulated in the $$3$$-almost prime formula into the $$k$$-almost prime case. Furthermore, I will note that although the proofs aren't too difficult, I again was unable to find them written out anywhere, so we shall provide the proof. 
 
-$$\textbf{Theorem 2:}$$ With the same notation as above, we have the following formulas for the $$k$$-almost primes and square-free $$k$$-almost primes less than a given value $$x$$:
+$$\textbf{Theorem 2:}$$ With the same notation as above, we have the following formulas for the $$k$$-almost primes less than a given value $$x$$ whose smallest prime factor is $$p_j$$:
 
 $$
 \begin{equation}
-\pi_k(x)=\sum_{i_1=1}^{\sqrt[k]{x}}\sum_{i_2=i_1}^{\pi\left(\sqrt[k-1]{\frac{x}{p_{i_1}}}\right)}...\sum_{i_{k-1}=i_{k-2}}^{\pi\left(\sqrt{\frac{x}{p_{i_1}p_{i_2}...p_{i_{k-2}}}}\right)}\left(\pi\left(\right)-i_{k-1}+1\right)
+\pi_k(x)=\sum_{i_1=j}^{\sqrt[k]{x}}\sum_{i_2=i_1}^{\pi\left(\sqrt[k-1]{\frac{x}{p_{i_1}}}\right)}...\sum_{i_{k-1}=i_{k-2}}^{\pi\left(\sqrt{\frac{x}{p_{i_1}p_{i_2}...p_{i_{k-2}}}}\right)}\left(\pi\left(\frac{x}{p_1p_2...p_{k-1}}\right)-i_{k-1}+1\right)
+\end{equation}
+$$
+
+Similarly, we have that the formula for the number of square-free $$k$$-almost primes less than a given value $$x$$ whose smallest prime factor is $$p_j$$ is given by:
+
+$$
+\begin{equation}
+\pi_k^*(x)=\sum_{i_1=j}^{\sqrt[k]{x}}\sum_{i_2=i_1+1}^{\pi\left(\sqrt[k-1]{\frac{x}{p_{i_1}}}\right)}...\sum_{i_{k-1}=i_{k-2}+1}^{\pi\left(\sqrt{\frac{x}{p_{i_1}p_{i_2}...p_{i_{k-2}}}}\right)}\left(\pi\left(\frac{x}{p_1p_2...p_{k-1}}\right)-i_{k-1}\right)
+\end{equation}
+$$
+
+In particular, setting $$j=1$$ gives us the formula for the number of $$k$$-almost primes and square-free $$k$$-almost primes less than a given value $$x$$:
+
+$$
+\begin{equation}
+\pi_k(x)=\sum_{i_1=1}^{\sqrt[k]{x}}\sum_{i_2=i_1}^{\pi\left(\sqrt[k-1]{\frac{x}{p_{i_1}}}\right)}...\sum_{i_{k-1}=i_{k-2}}^{\pi\left(\sqrt{\frac{x}{p_{i_1}p_{i_2}...p_{i_{k-2}}}}\right)}\left(\pi\left(\frac{x}{p_1p_2...p_{k-1}}\right)-i_{k-1}+1\right)
 \end{equation}
 $$
 
 $$
 \begin{equation}
-\pi_k^*(x)=\sum_{i_1=1}^{\sqrt[k]{x}}\sum_{i_2=i_1+1}^{\pi\left(\sqrt[k-1]{\frac{x}{p_{i_1}}}\right)}...\sum_{i_{k-1}=i_{k-2}+1}^{\pi\left(\sqrt{\frac{x}{p_{i_1}p_{i_2}...p_{i_{k-2}}}}\right)}\left(\pi\left(\right)-i_{k-1}\right)
+\pi_k^*(x)=\sum_{i_1=1}^{\sqrt[k]{x}}\sum_{i_2=i_1+1}^{\pi\left(\sqrt[k-1]{\frac{x}{p_{i_1}}}\right)}...\sum_{i_{k-1}=i_{k-2}+1}^{\pi\left(\sqrt{\frac{x}{p_{i_1}p_{i_2}...p_{i_{k-2}}}}\right)}\left(\pi\left(\frac{x}{p_1p_2...p_{k-1}}\right)-i_{k-1}\right)
 \end{equation}
 $$
 
@@ -60,14 +88,18 @@ After proving these formulas, we shall relate these ideas to Merten's conjecture
 
 <h1>The Semiprime Case</h1>
 
-Now we shall give a proof of $$\textbf{Theorem 1}$$ for the formula for semiprimes primarily because it will highlight the general approach to the $$k$$-almost prime case. 
+Now we shall give a proof of Theorem 1 for the formula for (square-free) semiprimes. Then we shall remark how we can then see the formula for the number of (square-free) semiprimes whose smallest possible prime factor is $$p_i$$.
 
 We shall do this by simply counting the number of semiprimes less than $$x$$. To do this we begin by remarking that the largest possible prime factor of a semiprime less than $$x$$ can be $$\sqrt{x}$$. Thus, we will have $$\pi(\sqrt{x})$$ different possible prime factors. Now for each prime $$p_k\in\{p_1,...,p_{\pi(\sqrt{x})}\}$$, we claim that there are $$\pi\left(\frac{x}{p_k}\right)-k+1$$ semiprimes less than $$x$$ whose smallest prime factor is $$p_k$$. To see this we remark that $$\pi\left(\frac{x}{p_k}\right)$$ counts the number of primes less than or equal to $$\frac{x}{p_k}$$, and for such a prime $$q$$ we will have that $$qp_k$$ is a semiprime less than or equal to $$x$$. However, we want to only count those whose smallest prime factor is $$p_k$$, as there are $$k-1$$ primes less than $$p_k$$, we conclude that there are exactly $$\pi\left(\frac{x}{p_k}\right)-k+1$$ semiprimes less than or equal to $$x$$ having $$p_k$$ as the smallest prime factor. Thus, we conclude the first formula of theorem $$1$$ by observing that we are just summing over all possible prime factors which can divide a semiprime less than or equal to $$x$$. Similarly, we conclude the second formula of theorem $$1$$ by seeing that $$\pi\left(\frac{x}{p_k}\right)-k$$ will count the number of square-free semiprimes less than or equal to $$x$$ having $$p_k$$ as the smallest prime factor. This gives us theorem $$1$$.
+
+Now we remark that the formula for the number of (square-free) semiprimes whose smallest prime factor is $$p_i$$ follows by the exact same counting method as above, but since the smallest prime factor is $$p_i$$ we then must start our sum at the value $$i$$ rather than $$1$$. 
 
 
 <h1>The General k-almost Prime Case</h1>
 
-We shall now give a proof of the general $$k$$-almost prime case. 
+We shall now give a proof of the general $$k$$-almost prime case. Let us begin with the $$k$$-almost prime case. We shall do this via induction on $$k$$ together with the observation that 
+
+Now for the square-free case, we 
 
 <h1>Connection to Merten's Conjecture and Riemann Hypothesis</h1>
 
