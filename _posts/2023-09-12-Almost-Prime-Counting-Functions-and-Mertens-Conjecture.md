@@ -46,12 +46,14 @@ $$\textbf{Theorem 2:}$$ With the same notation as above, we have the following f
 
 $$
 \begin{equation}
-\pi_k(x)=
+\pi_k(x)=\sum_{i_1=1}^{\sqrt[k]{x}}\sum_{i_2=i_1}^{\pi\left(\sqrt[k-1]{\frac{x}{p_{i_1}}}\right)}...\sum_{i_{k-1}=i_{k-2}}^{\pi\left(\sqrt{\frac{x}{p_{i_1}p_{i_2}...p_{i_{k-2}}}}\right)}\left(\pi\left(\right)-i_{k-1}+1\right)
 \end{equation}
 $$
 
 $$
-\pi_k^*(x)
+\begin{equation}
+\pi_k^*(x)=\sum_{i_1=1}^{\sqrt[k]{x}}\sum_{i_2=i_1+1}^{\pi\left(\sqrt[k-1]{\frac{x}{p_{i_1}}}\right)}...\sum_{i_{k-1}=i_{k-2}+1}^{\pi\left(\sqrt{\frac{x}{p_{i_1}p_{i_2}...p_{i_{k-2}}}}\right)}\left(\pi\left(\right)-i_{k-1}\right)
+\end{equation}
 $$
 
 After proving these formulas, we shall relate these ideas to Merten's conjecture by giving a formula for Merten's function in terms of the square-free $$k$$-almost prime counting functions. 
