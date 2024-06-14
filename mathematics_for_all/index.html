@@ -1,1 +1,18 @@
+---
+layout: default
+title: Mathematics for ∀ll
+---
+	
+	
+	<h1>{{ page.title }}</h1>
+	<p>The goal of this page is to attempt to describe some of the mathematics that I think about in a way that most people can understand (I don't know how I will do, but I will do my best).</p>
+
+  <p>The name of this section "Mathematics for ∀ll" is a pun. In mathematics the symbol ∀ is called the universal quantifier and when you see this symbol you say "for all".</p>
+	
+	<ul class="posts">
+
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
 
