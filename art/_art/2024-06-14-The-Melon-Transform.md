@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: art
 title: "The Melon Transform"
 date: 2024-06-14
 ---
