@@ -1,5 +1,5 @@
 ---
-layout: all
+layout: post
 title: "Hyperfields"
 date: 2024-06-14
 ---
