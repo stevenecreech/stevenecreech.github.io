@@ -7,10 +7,10 @@ title: Steven Creech's Mathematical Art
 	<h1>{{ page.title }}</h1>
 	<p>Below are several links to various mathematical art projects that I have created. Have fun exploring.</p>
 	
-	<ul class="posts">
+	<ul class="art">
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% for art in site.arts %}
+	    <li><span>{{ art.date | date_to_string }}</span> » <a href="{{ art.url }}" title="{{ art.title }}">{{ art.title }}</a></li>
 	  {% endfor %}
 	</ul>
 
