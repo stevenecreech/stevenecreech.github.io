@@ -1,2 +1,3 @@
 name: Steven Creech
 markdown: stevenecreech
+permalink: /blog/:year/:month/:day/:title
