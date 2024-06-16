@@ -9,8 +9,8 @@ The Mellin transform is an integral transform that I have used a lot in my mathe
 
 
 <body>
-	<p><a href="/files/The_Melon_Transform.pdf" target="_blank">CV</a></p>
+	<p><a href="files/The_Melon_Transform.pdf" target="_blank">CV</a></p>
 
 
-  <embed src="/files/The_Melon_Transform.pdf" type="application/pdf" width="100%" height="500px" />
+  <embed src="files/The_Melon_Transform.pdf" type="application/pdf" width="100%" height="500px" />
 </body>
