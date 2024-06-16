@@ -11,8 +11,8 @@ title: Mathematics for ∀ll
 	
 	<ul class="post">
 
-	  {% for all in site.all %}
-	    <li><span>{{ all.date | date_to_string }}</span> » <a href="{{ all.url }}" title="{{ all.title }}">{{ all.title }}</a></li>
+	  {% for post in site.categories.all %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>
 
