@@ -6,24 +6,61 @@ title: Steven Creech
 <div class="blurb">
     <h1>Steven Creech</h1>
     <h1>Mathematician</h1>
-    <div class="content-flex">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Hover Text</title>
+        <style>
+            .image-container {
+                position: relative;
+                display: inline-block;
+            }
+
+            .image-container img {
+                display: block;
+            }
+
+            .hover-text {
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(0, 0, 0, 0.75);
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+                text-align: center;
+                width: 80%;
+                box-sizing: border-box;
+            }
+
+            .image-container:hover .hover-text {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
         <div class="image-container">
-            <img src="/images/SugarGlider.JPG" alt="Sugar Glider Image" width="300" height="auto">
+            <img src="images/SugarGlider.JPG" alt="Sugar Glider Image" width="300" height="auto">
             <div class="hover-text">
                 This animal is a Sugar Glider. It is part of the marsupial family. This photo was taken at a kangaroo farm in Kelowna, Canada during the Inclusive Paths in Explicit Number Theory Summer School in 2023.
             </div>
         </div>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/t0w1WPMc7Lc?si=m2XXqN4qlVfNJMxj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <p>
-        Hi, my name is Steven Creech, I am a graduate student at Brown University under the advisement of 
-        <a href="https://www.brown.edu/academics/math/people/jeffrey-hoffstein">Jeff Hoffstein</a> and 
-        <a href="https://sites.google.com/brown.edu/junehyuk/about?authuser=0">Junehyuk Jung</a>.
-        My primary area of interest lies in number theory. Specifically, I am interested in automorphic forms and hyperbolic geometry. I am currently thinking about quantum unique ergodicity for modular forms on cocompact Riemann surfaces arising from quaternion algebras.
-    </p>
-    
-    <p>
-        I graduated in 2020 from Georgia Tech with a Bachelor of Science in Mathematics under the advisement of 
-        <a href="https://sites.google.com/view/mattbakermath/home/">Matt Baker</a>.
-    </p>
+
+        <p>
+            Hi, my name is Steven Creech, I am a graduate student at Brown University under the advisement of 
+            <a href="https://www.brown.edu/academics/math/people/jeffrey-hoffstein">Jeff Hoffstein</a> and 
+            <a href="https://sites.google.com/brown.edu/junehyuk/about?authuser=0">Junehyuk Jung</a>.
+            My primary area of interest lies in number theory. Specifically, I am interested in automorphic forms and hyperbolic geometry. I am currently thinking about quantum unique ergodicity for modular forms on cocompact Riemann surfaces arising from quaternion algebras.
+        </p>
+        
+        <p>
+            I graduated in 2020 from Georgia Tech with a Bachelor of Science in Mathematics under the advisement of 
+            <a href="https://sites.google.com/view/mattbakermath/home/">Matt Baker</a>.
+        </p>
+
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/t0w1WPMc7Lc?si=m2XXqN4qlVfNJMxj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+
+    </body>
 </div><!-- /.blurb -->
