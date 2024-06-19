@@ -45,10 +45,11 @@ A classical piece of mathematical art is a glass klein bottle. I believe it was 
             <div class="hover-text">
               The term Bottle in Klein bottle (Klein Flasche) is actually a translation error for the German word for surface (Oberfläche). 
             </div>
-            <p>  </p>
+            <p>Above is a picture of my glass Klein bottle.</p>
 
  <div class="image-container">
             <img src="../../../../../images/Glass Mobius Strip.JPG" alt="Glass Möbius Strip" width="300" height="auto">
             <div class="hover-text">
               Why did the chicken cross the Möbius Strip? To get to the same side! 
             </div>
+<p>Above is a picture of my glass Möbius strip.</p>
