@@ -40,6 +40,8 @@ A classical piece of mathematical art is a glass klein bottle. I believe it was 
         </style>
     </head>
 
+  <body>
+
   <div class="image-container">
             <img src="../../../../../images/Glass Klein Bottle.JPG" alt="Glass Klein Bottle" width="300" height="auto">
             <div class="hover-text">
@@ -53,3 +55,4 @@ A classical piece of mathematical art is a glass klein bottle. I believe it was 
               Why did the chicken cross the Möbius Strip? To get to the same side! 
             </div>
 <p>Above is a picture of my glass Möbius strip.</p>
+ </body>
