@@ -1,0 +1,76 @@
+---
+layout: default
+title: The Trace Formula Project
+description: Trace Formulas by Steven Creech is a multimedia reference book series with a companion website, Lean formalizations, and video lectures on trace formulas and the spectral theory of automorphic forms.
+---
+<header class="page-header">
+  <p class="eyebrow">In progress</p>
+  <h1>The Trace Formula Project</h1>
+  <p class="lede">
+    A multimedia reference book series on trace formulas, bringing together mathematical exposition, Lean
+    formalizations, and video explanations in one place.
+  </p>
+  <div class="contact-row">
+    <a class="btn primary" href="https://stevenecreech.github.io/TraceFormulas/">Open the website</a>
+    <a class="btn" href="https://stevenecreech.github.io/TraceFormulas/pdf/v1a.pdf">Volume 1a PDF</a>
+    <a class="btn" href="https://github.com/stevenecreech/TraceFormulas" rel="noopener" target="_blank">Source on GitHub</a>
+  </div>
+</header>
+
+<div class="prose">
+  <h2>The idea</h2>
+  <p>
+    Trace formulas sit at the center of modern analytic number theory. The Petersson and Kuznetsov formulas, the
+    Selberg trace formula, and their relative versions are the tools behind results on moments of L-functions,
+    subconvexity, equidistribution, and non-vanishing. Almost every paper I have written uses one.
+  </p>
+  <p>
+    Yet learning them is hard. The ideas are spread across research papers and a handful of books, each with its
+    own normalizations, and the pictures that make the subject intuitive rarely make it to the page. This project
+    is my attempt to fix that by developing the material through three connected perspectives, in three formats
+    at once.
+  </p>
+  <ul>
+    <li><strong>A book.</strong> The natural-language text, written in LaTeX with complete arguments and consistent conventions, and built as a PDF.</li>
+    <li><strong>A website.</strong> The same manuscript presented alongside its Lean sources, with <em>Read</em>, <em>Watch</em>, <em>Formalization</em>, <em>Compare</em>, and <em>Map</em> views for every section.</li>
+    <li><strong>A video series.</strong> Chapter lectures on <a href="https://www.youtube.com/channel/UCL-1eg3NiAtbpZlqMogyf2g">Screech Math</a>, built from the same source as the text.</li>
+  </ul>
+
+  <h2>The series</h2>
+  <p>Each volume treats one setting, and each has three parts: <strong>A</strong>, automorphic forms; <strong>B</strong>, automorphic representations; and <strong>C</strong>, the dictionary between them.</p>
+  <ul class="entries">
+    <li><span>Volume 1 · The modular group SL₂(ℤ)</span><span class="when">1a in draft</span></li>
+    <li><span>Volume 2 · Congruence subgroups of SL₂(ℤ), including nebentypus</span><span class="when">Planned</span></li>
+    <li><span>Volume 3 · Half-integral weight</span><span class="when">Planned</span></li>
+    <li><span>Volume 4 · Quaternionic forms</span><span class="when">Planned</span></li>
+  </ul>
+  <p>
+    Every theorem in the book is paired with a Lean formalization, and the <em>Compare</em> view on the website puts
+    the prose statement and its formal counterpart side by side. The formalizations build with no admitted proofs,
+    but machine verification is separate from checking that the formal statement says what the prose says. That
+    correspondence is reviewed by hand, and the videos are part of that review. See the <a href="/lean/">Lean page</a>
+    for more on why.
+  </p>
+
+  <h2>Status</h2>
+  <div class="callout">
+    <p>
+      The series is under active development. Volume 1a has a full outline of 31 chapters and nine appendices, and
+      Chapter 0 (traces, integral kernels, and weighted diagonal traces) has its manuscript, Lean companions, and a
+      draft lecture script. Most chapters remain unwritten. The website rebuilds automatically as material lands, so
+      the <a href="https://stevenecreech.github.io/TraceFormulas/">live site</a> is always current.
+    </p>
+  </div>
+
+  <h2>Get in touch</h2>
+  <p>
+    Comments, corrections, and requests for topics are very welcome. Email me at
+    <a href="mailto:steven.creech@rutgers.edu">steven.creech@rutgers.edu</a>, or open an issue on
+    <a href="https://github.com/stevenecreech/TraceFormulas/issues">GitHub</a>.
+  </p>
+  <p class="small muted">
+    This material is based upon work supported by the National Science Foundation under Award No. DMS-2602321.
+    Any opinions, findings and conclusions or recommendations expressed in this material are those of the author
+    and do not necessarily reflect the views of the National Science Foundation.
+  </p>
+</div>

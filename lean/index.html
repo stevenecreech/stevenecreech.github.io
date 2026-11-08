@@ -1,0 +1,66 @@
+---
+layout: default
+title: Lean
+description: Steven Creech on the Lean theorem prover, formalizing mathematics, and formalizing his own papers.
+---
+<header class="page-header">
+  <p class="eyebrow">Formalization</p>
+  <h1>Lean</h1>
+  <p class="lede">
+    Lean is a proof assistant: a language in which mathematical definitions, theorems, and proofs are written
+    precisely enough that a computer can check every step.
+  </p>
+</header>
+
+<div class="prose">
+  <h2>What is Lean?</h2>
+  <p>
+    <a href="https://lean-lang.org/">Lean</a> is an interactive theorem prover. In ordinary mathematics a proof is
+    a piece of prose that a reader follows and, if convinced, accepts. In Lean a proof is a formal object. Every
+    definition is spelled out, every theorem is a precise statement in a typed logic, and every proof is a
+    sequence of steps that a small, trusted kernel verifies. If Lean accepts the proof, it is correct, all the way
+    down to the axioms.
+  </p>
+  <p>
+    Formalizing mathematics in Lean means translating a piece of mathematics into this language. One first writes
+    down the objects involved (a modular form, an L-function, a Hecke operator) as definitions, then states the
+    theorem in terms of those definitions, and finally builds the proof out of previously formalized results and
+    tactics, which are small automated procedures that carry out routine steps. The process is slower than writing
+    a proof on paper, but at the end there is no ambiguity about what was proved or whether the proof is complete.
+  </p>
+
+  <h2>Why I care</h2>
+  <p>
+    <strong>Correctness.</strong> My research is in analytic number theory, and the arguments in my field are
+    long and delicate. Constants, error terms, and edge cases are easy to get wrong, and the usual safeguards are
+    careful refereeing and the passage of time. A formalized proof removes the doubt. It also tends to reveal
+    exactly where the real content of an argument lives, which is useful in its own right.
+  </p>
+  <p>
+    <strong>Mathematics that machines can build on.</strong> Large language models are becoming part of how
+    mathematics gets done, but they hallucinate: they will state a theorem slightly wrong, or cite a result that
+    does not quite exist. If a result is formalized in Lean, an AI system can use it with no risk of
+    misremembering it, and anything it proves from it can be checked by Lean. Formalizing our work makes it
+    possible for these tools to make new discoveries that are formally known to be true, rather than merely
+    plausible.
+  </p>
+
+  <h2>What I am working on</h2>
+  <p>
+    I am currently formalizing all of my papers in Lean. For each paper the plan is to formalize the definitions
+    and theorem statements first, then the proofs.
+  </p>
+  <p>
+    Alongside this I am making videos, posted to my YouTube channel
+    <a href="https://www.youtube.com/channel/UCL-1eg3NiAtbpZlqMogyf2g">Screech Math</a>, that place the natural
+    language statement of each theorem next to its Lean formalization and walk through them together. A formal
+    proof is only as good as the statement it proves, and the point of the videos is to make sure that the
+    translation from the paper to Lean is faithful, in a way that anyone can check.
+  </p>
+  <div class="callout">
+    <p>
+      Links to the Lean code and the comparison videos will appear here as each paper is completed. See the
+      <a href="/research/">research page</a> for the papers themselves.
+    </p>
+  </div>
+</div>

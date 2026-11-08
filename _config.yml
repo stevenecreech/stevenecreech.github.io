@@ -1,3 +1,8 @@
+title: Steven Creech
 name: Steven Creech
-markdown: stevenecreech
-permalink: /blog/:year/:month/:day/:title
+description: Steven Creech is an NSF postdoc and Hill Assistant Professor in mathematics at Rutgers University working on analytic number theory and AI for mathematics.
+url: https://stevenecreech.github.io
+markdown: kramdown
+permalink: /art/:title/
+exclude:
+  - README.md
