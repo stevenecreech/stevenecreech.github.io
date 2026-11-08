@@ -7,8 +7,8 @@ description: Trace Formulas by Steven Creech is a multimedia reference book seri
   <p class="eyebrow">In progress</p>
   <h1>The Trace Formula Project</h1>
   <p class="lede">
-    A multimedia reference book series on trace formulas, bringing together mathematical exposition, Lean
-    formalizations, and video explanations in one place.
+    A multimedia reference book series meant to be the single source for trace formulas, in every normalization
+    and variation, developed first for SL₂(ℤ) and then generalized.
   </p>
   <div class="contact-row">
     <a class="btn primary" href="https://stevenecreech.github.io/TraceFormulas/">Open the website</a>
@@ -22,14 +22,32 @@ description: Trace Formulas by Steven Creech is a multimedia reference book seri
   <p>
     Trace formulas sit at the center of modern analytic number theory. The Petersson and Kuznetsov formulas, the
     Selberg trace formula, and their relative versions are the tools behind results on moments of L-functions,
-    subconvexity, equidistribution, and non-vanishing. Almost every paper I have written uses one.
+    subconvexity, equidistribution, and non-vanishing.
   </p>
   <p>
-    Yet learning them is hard. The ideas are spread across research papers and a handful of books, each with its
-    own normalizations, and the pictures that make the subject intuitive rarely make it to the page. This project
-    is my attempt to fix that by developing the material through three connected perspectives, in three formats
-    at once.
+    Yet there is no single place to look them up. Each paper and each book fixes its own normalizations of the
+    forms, the measures, the Bessel transforms, and the Kloosterman sums, and a formula copied from one source
+    rarely matches a formula copied from another without a page of bookkeeping. Variants that are standard in the
+    folklore, such as weighted versions, versions with a fixed level or nebentypus, or versions for half-integral
+    weight, are often not written down anywhere at all.
   </p>
+  <p>
+    The goal of this book is to be the source for all things trace formulas: every formula, in every common
+    normalization and variation, stated precisely and proved completely, with the conversions between conventions
+    made explicit. It is organized so that the subject is learned once and then generalized.
+  </p>
+  <ul>
+    <li><strong>Start with SL₂(ℤ).</strong> Volume 1 develops the whole theory for the full modular group, where
+      every object can be written down concretely and every proof can be followed to the end.</li>
+    <li><strong>Then generalize.</strong> The later volumes carry the same formulas, in the same order and with the
+      same conventions, to congruence subgroups with nebentypus, to half-integral weight, to quaternionic forms, and
+      onward to other groups and other kinds of forms. A reader who knows Volume 1 should be able to read off the
+      changes.</li>
+    <li><strong>Compare with automorphic representations.</strong> Each volume has a part in the classical language
+      of automorphic forms, a part in the language of automorphic representations, and a dictionary part that lines
+      the two up statement by statement, so each trace formula can be read in whichever style suits the problem.</li>
+  </ul>
+  <p>The material is developed in three formats at once, all built from one source:</p>
   <ul>
     <li><strong>A book.</strong> The natural-language text, written in LaTeX with complete arguments and consistent conventions, and built as a PDF.</li>
     <li><strong>A website.</strong> The same manuscript presented alongside its Lean sources, with <em>Read</em>, <em>Watch</em>, <em>Formalization</em>, <em>Compare</em>, and <em>Map</em> views for every section.</li>
@@ -57,16 +75,14 @@ description: Trace Formulas by Steven Creech is a multimedia reference book seri
     <p>
       The series is under active development. Volume 1a has a full outline of 31 chapters and nine appendices, and
       Chapter 0 (traces, integral kernels, and weighted diagonal traces) has its manuscript, Lean companions, and a
-      draft lecture script. Most chapters remain unwritten. The website rebuilds automatically as material lands, so
-      the <a href="https://stevenecreech.github.io/TraceFormulas/">live site</a> is always current.
+      draft lecture script. Most chapters remain unwritten.
     </p>
   </div>
 
   <h2>Get in touch</h2>
   <p>
     Comments, corrections, and requests for topics are very welcome. Email me at
-    <a href="mailto:steven.creech@rutgers.edu">steven.creech@rutgers.edu</a>, or open an issue on
-    <a href="https://github.com/stevenecreech/TraceFormulas/issues">GitHub</a>.
+    <a href="mailto:steven.creech@rutgers.edu">steven.creech@rutgers.edu</a>.
   </p>
   <p class="small muted">
     This material is based upon work supported by the National Science Foundation under Award No. DMS-2602321.
