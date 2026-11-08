@@ -199,6 +199,11 @@ figcaption { font-size: 0.88rem; color: var(--muted); margin-top: 0.6em; line-he
 }
 
 .contact-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 1.4rem 0 0; }
+.hero .contact-row { display: grid; grid-template-columns: max-content max-content; justify-content: start; }
+.hero .contact-row .btn { justify-content: flex-start; }
+@media (max-width: 480px) {
+  .hero .contact-row { grid-template-columns: 1fr; }
+}
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 9px 14px; border-radius: 999px; border: 1px solid var(--border);
